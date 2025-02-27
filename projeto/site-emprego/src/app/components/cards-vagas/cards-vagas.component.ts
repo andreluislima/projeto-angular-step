@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { JobServiceService, Job } from '../../services/job-service.service';
 import { PesquisaComponent } from '../pesquisa/pesquisa.component';
+import { BadgesComponent } from '../badges/badges.component';
 
 @Component({
   selector: 'app-cards-vagas',

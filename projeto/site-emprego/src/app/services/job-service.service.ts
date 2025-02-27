@@ -14,6 +14,8 @@ export interface Job {
   postedAt:string[];
   contract:string[];
   location:string[];
+  new:boolean;
+  featured:boolean;
 }
 
 @Injectable({

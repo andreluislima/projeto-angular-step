@@ -1,8 +1,10 @@
-
-<span *ngIf="type === 'new'" ngClass="badge rounded-pill" [ngStyle]="{'background-color':color}" >
-    {{text}}
-</span>
-
-<span *ngIf="type === 'featured'" class="badge rounded-pill text-bg-dark">
-    {{text}}
-</span>
+<!-- Badge para "NEW" -->
+<span *ngIf="job.new" class="badge rounded-pill" [ngStyle]="{'background-color': color}">
+    NEW
+  </span>
+  
+  <!-- Badge para "FEATURED" -->
+  <span *ngIf="job.featured" class="badge rounded-pill text-bg-dark">
+    FEATURED
+  </span>
+  

@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { JobServiceService } from '../../services/job-service.service';
+
 @Component({
   selector: 'app-badges',
   imports: [CommonModule],
@@ -11,5 +13,7 @@ export class BadgesComponent {
   @Input() color:string = 'hsl(180, 29%, 50%)';
   // @Input() width:string = '100%';
   @Input() type: 'new' | 'featured' = 'new';
+  
+job: any;
 
 }
